@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_logo"
+        android:scaleType="centerInside"
+        android:alpha="0.15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Páginas (Perfis, Vender, Totais): dá para arrastar para os lados -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/dark_surface"
+            android:elevation="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nav_profiles"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="0dp"
+                android:text="Perfis"
+                android:textColor="@color/nav_selector"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:fontFamily="sans"
+                app:icon="@drawable/ic_profiles"
+                app:iconGravity="textTop"
+                app:iconPadding="2dp"
+                app:iconSize="24dp"
+                app:iconTint="@color/nav_selector" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nav_sale"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="0dp"
+                android:text="Vender"
+                android:textColor="@color/nav_selector"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:fontFamily="sans"
+                app:icon="@drawable/ic_sale"
+                app:iconGravity="textTop"
+                app:iconPadding="2dp"
+                app:iconSize="24dp"
+                app:iconTint="@color/nav_selector" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/nav_totals"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="0dp"
+                android:text="Totais"
+                android:textColor="@color/nav_selector"
+                android:textSize="12sp"
+                android:textAllCaps="false"
+                android:fontFamily="sans"
+                app:icon="@drawable/ic_totals"
+                app:iconGravity="textTop"
+                app:iconPadding="2dp"
+                app:iconSize="24dp"
+                app:iconTint="@color/nav_selector" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

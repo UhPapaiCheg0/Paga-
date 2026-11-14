@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personalize sua tela"
+            android:fontFamily="@font/matcha_home"
+            android:textColor="@color/gold"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:text="Escolha como alimentos e perfis serão exibidos na tela de vendas."
+            android:textColor="@color/gray_hint"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FORMATO DE EXIBIÇÃO"
+            android:fontFamily="@font/matcha_home"
+            android:textColor="@color/gold"
+            android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/groupDisplayMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/gold"
+                    android:text="Lista — formato atual"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/radioGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/gold"
+                    android:text="Grade — 3 colunas"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="APLICAR EM"
+            android:fontFamily="@font/matcha_home"
+            android:textColor="@color/gold"
+            android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/groupApplyTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioFoods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/gold"
+                    android:text="Apenas alimentos"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/radioPeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/gold"
+                    android:text="Apenas perfis"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/radioBoth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/gold"
+                    android:text="Alimentos e perfis"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveDisplaySettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Salvar configurações"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/gold"
+            xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </LinearLayout>
+</ScrollView>

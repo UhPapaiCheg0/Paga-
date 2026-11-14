@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Pagae" parent="Theme.MaterialComponents.DayNight">
+        <item name="colorPrimary">@color/gold</item>
+        <item name="colorPrimaryVariant">@color/gold_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/gold</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorControlNormal">@color/gray_nav</item>
+
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">#FFBBBBBB</item>
+        <item name="android:textColorHint">@color/gray_hint</item>
+        <item name="android:editTextColor">@color/white</item>
+
+        <item name="actionBarStyle">@style/PagaeActionBar</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+
+    <style name="PagaeActionBar" parent="Widget.MaterialComponents.ActionBar.Solid">
+        <item name="background">@color/black</item>
+        <item name="titleTextStyle">@style/PagaeTitle</item>
+    </style>
+
+    <style name="PagaeTitle" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/gold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:fontFamily">@font/matcha_home</item>
+        <item name="fontFamily">@font/matcha_home</item>
+    </style>
+
+    <!-- Nome do aplicativo (barra superior da tela principal): maior que os demais títulos -->
+    <style name="PagaeAppName" parent="PagaeTitle">
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="PagaeActionBarMain" parent="PagaeActionBar">
+        <item name="titleTextStyle">@style/PagaeAppName</item>
+    </style>
+
+    <style name="Theme.Pagae.Main" parent="Theme.Pagae">
+        <item name="actionBarStyle">@style/PagaeActionBarMain</item>
+    </style>
+
+</resources>

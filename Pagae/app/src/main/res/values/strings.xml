@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pagaê</string>
+    <string name="about_button">Sobre o app</string>
+    <string name="about_title">Sobre</string>
+    <string name="copyright_notice">© 2026 Marcos Morais. Todos os direitos reservados.</string>
+    <string name="copyright_details">Este aplicativo e o seu código-fonte são protegidos pela legislação brasileira de direitos autorais (Lei nº 9.609/1998). É proibida a cópia ou a distribuição sem autorização do autor.</string>
+    <string name="credits_font">Fonte Matcha Home, por Khurasan (khurasanstudio.com), de uso gratuito pessoal e comercial.</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gold">#F5BD45</color>
+    <color name="gold_dark">#D99A22</color>
+    <color name="gold_light">#FFE2A0</color>
+    <color name="black">#FF0B0D10</color>
+    <color name="dark_surface">#FF15181E</color>
+    <color name="dark_card">#FF1C2028</color>
+    <color name="white">#FFF5F6F8</color>
+    <color name="gray_hint">#FF8D96A5</color>
+    <color name="gray_nav">#FF9AA3B2</color>
+    <color name="green_positive">#FF55C99A</color>
+    <color name="red_negative">#FFFF7777</color>
+    <color name="stroke_subtle">#FF303642</color>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="O que foi comprado?"
+            android:fontFamily="@font/matcha_home"
+            android:textColor="@color/gold"
+            android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/btnSaleSettings"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_settings"
+                    android:contentDescription="Configurações de exibição"
+                    android:padding="10dp"
+                    android:tint="@color/gold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtSearchFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_field"
+                android:padding="10dp"
+                android:hint="Pesquisar comida pelo nome" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvFoods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:id="@+id/txtSelectedFood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comida selecionada: nenhuma"
+                android:textStyle="italic"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quem está comprando?"
+            android:fontFamily="@font/matcha_home"
+            android:textColor="@color/gold"
+            android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edtSearchPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_field"
+                android:padding="10dp"
+                android:hint="Pesquisar perfil pelo nome" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvPeople"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:id="@+id/txtSelectedPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Perfil selecionado: nenhum"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_save"
+        android:contentDescription="Salvar venda" />
+</FrameLayout>
